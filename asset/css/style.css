@@ -85,6 +85,7 @@ nav li{
     padding: 6px;
     border-radius: 4px;
     text-align: center;
+    transition: background-color 0.3s ease ease-out;
   
 }
 
@@ -143,11 +144,11 @@ main {
 /*SECCION FOOTER */ 
 footer {
     background-color: #B4EBE6;
-    height: 100px;
+    height: 150px;
     grid-area: footer;
 }
 
-footer p {
+.nombre {
     text-transform: capitalize;
     text-align: center;
     font-size: 24px;
@@ -155,6 +156,23 @@ footer p {
     padding: 10px;
     letter-spacing: 0.1rem;
     
+}
+.contacto {
+    text-align: center;
+    margin-left: 15px;
+    padding: 2px;
+    
+   
+
+
+}
+footer a { 
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    color: #FFB6C1;
 }
 
 
