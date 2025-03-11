@@ -49,8 +49,7 @@ nav {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     background-color: FBF8EF;
     grid-area: nav;
-    min-height: 100vh;
-
+    padding-bottom: 8px;
 }
 
 nav section {
@@ -62,33 +61,37 @@ nav section {
 
 nav h1 {
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 12px;
+    margin-top: 10px;
+    margin-bottom: 8px;
     text-align: center;
   
 }
 
 nav ul {
+    display: flex;
+    flex-direction: row;
     list-style: none;
 }
 
 nav li{
-    height: 20px;
-    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgba(208, 208, 208, 0.6) ;
+    font-size: 14px;
     transition: all 1s;
+    margin: 4px;
+    padding: 6px;
+    border-radius: 4px;
+    text-align: center;
   
 }
 
 nav li:hover{
-    height: 25px;
-    width: 100%;
     border-radius: 4px;
-    background-color: rgba(208, 208, 208, 0.6) ;
+    background-color: #FFB6C1;
 }
-
-
-
-
 
    
 /*SECCION MAIN */ 
@@ -159,21 +162,49 @@ footer p {
 @media (min-width:576px) {
     body {
     display: grid;
-    grid-template-columns: 2fr 6fr;
+    grid-template-columns: 1.8fr 8fr ;
     grid-template-areas: 
     "header header"
     "nav main"
     "footer footer ";
 
     }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    
+    nav li{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color:  rgba(208, 208, 208, 0.6) ;
+        font-size: 14px;
+        transition: all 1s;
+        margin: 4px;
+        padding: 6px;
+        border-radius: 2px; 
+    }
+
+    nav section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+
+        
+    }
+    
+    
+    
+
    
 }
 
 /*MEDIA MOBILE */
 @media (max-width:576px) {
-    nav {
-        display: none;
-    }
+    
     
 
 }
